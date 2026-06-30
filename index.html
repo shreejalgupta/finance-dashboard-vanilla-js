@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fintech Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="">
+
+    <!-- login and register section  -->
+
+    <div class="login-window ">
+        <div class="login-form-section">
+            <h2>Welcome Back</h2>
+            <p>Login to Fintech Pro</p>
+            <form action="" class="login-form | form">
+                <div class="username-label common-label">
+                    <label for="username">Username</label>
+                    <input type="text" id="login-username" class="login-username">
+                </div>
+                <div class="password-label common-label">
+                    <label for="password">Password</label>
+                    <input type="password" id="login-password" class="login-password">
+                </div>
+                <button id="login-btn">Login</button>
+            </form>
+            <p>Don't have an account? <span class="regester-tag">Register here</span></p>
+        </div>
+    </div>
+    <div class="register-window">
+        <div class="login-form-section">
+            <h2>Create Account</h2>
+            <p>Join Fintech Pro</p>
+            <form action="" class="register-form | form">
+                <div class="username-label common-label">
+                    <label for="username">Choose a Username</label>
+                    <input type="text" id="register-username" class="login-username">
+                </div>
+                <div class="password-label common-label">
+                    <label for="password">Password</label>
+                    <input type="password" id="register-password" class="login-password">
+                </div>
+                <button id="register-btn">Register</button>
+            </form>
+            <p>Already have an account? <span class="login-tag">Login here</span></p>
+        </div>
+    </div>
+
+    <!-- login and register section end  -->
+
+    <!-- main section  -->
+
+    <div class="main-hero">
+
+        <nav class="main-navbar">
+            <div class="nav-top">
+                <div class="logo">
+                    <i class="ri-stack-fill"></i>
+                    <div class="logo-text">
+                        <h2>Fintech Pro</h2>
+                        <p>Enterprise Finance</p>
+                    </div>
+
+                </div>
+                <ul class="ul-nav-section">
+                    <li id="dashboard-btn" class="common-nav-li"><i class="ri-dashboard-line"></i> Dashboard</li>
+                    <li id="setting-btn" class="common-nav-li"><i class="ri-settings-4-line"></i> Settings</li>
+                </ul>
+            </div>
+            <div class="nav-bottom">
+                <button id="adding-btn"><i class="ri-add-large-fill"></i> Add Transaction</button>
+            </div>
+        </nav>
+        <div class="adding-expense">
+            <div class="expense-adding-div">
+                <div class="adding-top">
+                    <h2>Add Transaction</h2>
+                    <i class="closeFormAdd ri-close-large-line" style="cursor: pointer;"></i>
+                </div>
+                <form action="" id="form-expense-adding" class="adding-form">
+                    <label for="type">Type</label>
+                    <select name="type" id="type" class="common-in-adding-form">
+                        <option value="expense">Expense</option>
+                        <option value="income">Income</option>
+                    </select>
+                    <label for="description">Description</label>
+                    <input type="text" name="description" placeholder="e.g Amazon, Salary, Coffee"
+                        class="common-in-adding-form">
+
+                    <div class="amount-div-form">
+                        <div class="amoun-div">
+                            <label for="amount">Amount</label>
+                            <input type="number" name="amount" class="common-in-adding-form">
+                        </div>
+                        <div class="date-div">
+                            <label for="date">Date</label>
+                            <input type="date" name="amount" class="common-in-adding-form">
+                        </div>
+                    </div>
+
+                    <label for="category">Category</label>
+                    <select name="category" id="category-form" class="common-in-adding-form">
+                        <option value="Other" disabled selected>Select a category</option>
+                        <option value="Foods & Dining">Foods & Dining</option>
+                        <option value="Shopping">Shopping</option>
+                        <option value="Recharge & Bills">Recharge & Bills</option>
+                        <option value="Petrol & Auto">Petrol & Auto</option>
+                        <option value="Utilities">Utilities</option>
+                        <option value="Salary">Salary</option>
+                        <option value="Entertainment">Entertainment</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <button class="adding-form-btn">Save Transaction</button>
+                </form>
+            </div>
+        </div>
+
+        <nav class="sec-navbar">
+            <div class="sec-navbar-btn">
+                <h3 class="userName-display">
+
+                </h3>
+                <button id="log-out-btn"><i class="ri-login-box-line"></i>Logout</button>
+            </div>
+        </nav>
+
+        <main id="dashboard-section" class="main-section-dashboard">
+            <div class="heading-top">
+                <h1>Financial Overview</h1>
+                <p>Real-time tracking application</p>
+            </div>
+            <div class="features-show-section">
+                <div class="feature">
+                    <div class="feature-01 | feature-logo">
+                        <i class="ri-bank-fill"></i>
+                    </div>
+                    <p class="feature-name">Current Balance</p>
+                    <h2 class="feature-currency"><span class="total-balance"></span><span class="currency-feature">$</span></h2>
+                </div>
+                <div class="feature">
+                    <div class="feature-02 | feature-logo">
+                        <i class="ri-money-dollar-circle-line"></i>
+                    </div>
+                    <p class="feature-name-02 | feature-name">Total Income</p>
+                    <h2 class="feature-name-02 | feature-currency"><span class="total-income"> </span><span class="currency-feature">$</span></h2>
+                </div>
+                <div class="feature">
+                    <div class="feature-03 | feature-logo">
+                        <i class="ri-error-warning-line"></i>
+                    </div>
+                    <p class="feature-name-03 | feature-name">Total Expense</p>
+                    <h2 class="feature-name-03 | feature-currency"><span class="total-expense"></span><span class="currency-feature">$</span></h2>
+                </div>
+                <div class="feature">
+                    <div class="feature-04 | feature-logo">
+                        <i class="ri-file-list-3-line"></i>
+                    </div>
+                    <p class="feature-name">Total Transaction</p>
+                    <h2 class="feature-currency"><span class="total-transaction">0.00</span></h2>
+                </div>
+            </div>
+            <div class="main-hero-section">
+                <div class="hero-section">
+                    <div class="prefrence-section | comon-section">
+                        <h2>Prefrences</h2>
+                        <div class="prfrence-div">
+                            <p>Dark Mode</p>
+                            <input type="checkbox" id="prfrence-btn">
+                        </div>
+                        <button id="reset-all-data"><i class="ri-delete-bin-fill"></i> Reset All Data</button>
+                    </div>
+
+                    <div class="all-transaction | comon-section">
+                        <h2>All Transactions</h2>
+                        <div class="input-section">
+                            <div class="input-search">
+                                <i class="ri-search-line"></i>
+                                <input id="search-btn" type="text" placeholder="Search Transaction">
+                            </div>
+                            <div class="input-select">
+                                <select name="" id="transaction-select">
+                                    <option value="all">All Type</option>
+                                    <option value="income">Income Only</option>
+                                    <option value="expense">Expense Only</option>
+                                </select>
+                            </div>
+
+                        </div>
+                        <div class="money-div">
+                            <div class="block-div | blocked-block">
+                                <p>DATE</p>
+                                <p>DESCRIPTION</p>
+                                <p>CATEGORY</p>
+                                <p>AMOUNT</p>
+                                <p>ACTION</p>
+                            </div>
+                            <div class="dom-blocks">
+                                <!-- dynamic section  -->
+
+                                
+
+                                <!-- dynamic section end  -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="chart">
+                        <h2>Cash flow Analysis</h2>
+                        <canvas id="myChart"></canvas>
+                    </div> -->
+            </div>
+        </main>
+
+        <!-- setting section -->
+
+        <section id="setting-section" class="main-section-setting">
+            <div class="heading-top">
+                <h1>Settings</h1>
+                <p>Manage your account profile and app formatting.</p>
+            </div>
+            <div class="main-hero-section">
+                <div class="hero-section">
+                    <form action="" id="profile-detail" class="comon-section">
+                        <h2>Profile Details</h2>
+                        <div class="setting-form">
+                            <div class="setting-form-1 comon-in-setting-form">
+                                <label for="userName">Full Name</label>
+                                <input id="setting-name" name="userName" type="text">
+                            </div>
+                            <div class="setting-form-2 comon-in-setting-form">
+                                <label for="currency">Primary Currency</label>
+                                <select name="currency" id="setting-currency">
+                                    <option value="$">USD $</option>
+                                    <option value="€">EUR €</option>
+                                    <option value="£">GBP £</option>
+                                    <option value="₹">INR ₹</option>
+                                    <option value="¥">JPY ¥</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" id="setting-submit">Save setting</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- <main main-section-setting>
+
+
+
+        </main> -->
+
+
+
+    </div>
+
+
+    <!-- main section end  -->
+
+    <!-- Script file  -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
